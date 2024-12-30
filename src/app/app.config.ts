@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"friendlychat-d500f","appId":"1:642022993800:web:c852a5c6b778a233afd43d","storageBucket":"friendlychat-d500f.firebasestorage.app","apiKey":"AIzaSyCeAoGus03sfnIamejM89D4Jef0T-Qki9s","authDomain":"friendlychat-d500f.firebaseapp.com","messagingSenderId":"642022993800"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
